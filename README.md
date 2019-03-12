@@ -47,7 +47,7 @@ See [configuring Bundles](https://github.com/brikcss/bundles-core#configuration)
 
 ### Configuration
 
-All options inside of `bundler.options` are passed directly to [EJS](https://github.com/mde/ejs). Please note the following:
+All options in `bundler.options` are passed directly to [EJS](https://github.com/mde/ejs#options). Please note the following:
 
 - `options.filename` is automatically set by the bundler.
 - If `options.context` is undefined, the bunder will automatically use `file.data` as the context. This allows you to use `this` in your template data. For example: `<%= this.name %>`.

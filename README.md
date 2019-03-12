@@ -9,8 +9,8 @@
     <!-- Travis branch. -->
     <a href="https://github.com/brikcss/bundles-ejs/tree/master"><img alt="Travis branch" src="https://img.shields.io/travis/rust-lang/rust/master.svg?style=flat-square&label=master"></a>
     <!-- Codacy. -->
-    <a href="https://www.codacy.com"><img alt="Codacy code quality" src="https://img.shields.io/codacy/grade/eea4417c437a45b9a07ee254c41c309d/master.svg?style=flat-square"></a>
-    <a href="https://www.codacy.com"><img alt="Codacy code coverage" src="https://img.shields.io/codacy/coverage/eea4417c437a45b9a07ee254c41c309d/master.svg?style=flat-square"></a>
+    <a href="https://www.codacy.com"><img alt="Codacy code quality" src="https://img.shields.io/codacy/grade/1343fb6ec0d041b9a9a95b7052563daa/master.svg?style=flat-square"></a>
+    <a href="https://www.codacy.com"><img alt="Codacy code coverage" src="https://img.shields.io/codacy/coverage/1343fb6ec0d041b9a9a95b7052563daa/master.svg?style=flat-square"></a>
     <!-- Coveralls -->
     <a href='https://coveralls.io/github/brikcss/bundles-ejs?branch=master'><img src='https://img.shields.io/coveralls/github/brikcss/bundles-ejs/master.svg?style=flat-square' alt='Coverage Status' /></a>
     <!-- JS Standard style. -->

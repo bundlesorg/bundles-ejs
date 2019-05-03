@@ -6,8 +6,8 @@ export default (bundle = {}, bundler = {}) => {
   // Set bundler defaults.
   bundler.options = bundler.options || {}
 
-  // Compile each output file with EJS and update file content.
-  bundle.output = bundle.output.map((file) => {
+  // Compile each changed file with EJS and update file content.
+  bundle.changed = bundle.changed.map((file) => {
     bundler.options.filename = file.source.path
     if (bundler.options.context === undefined) bundler.options.context = file.data
     file.content = ejs.render(file.source.content, file.data, bundler.options)

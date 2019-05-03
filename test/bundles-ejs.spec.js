@@ -1,13 +1,13 @@
 /* eslint-env jest */
-const bundle = require('@bundles/core')
-const ejs = require('../lib/bundles-ejs.js')
-const path = require('path')
-const log = require('loglevel')
-log.setLevel('silent')
+import bundles from '@bundles/core'
+import ejs from '../lib/bundles-ejs.js'
+import path from 'path'
+// import log from 'loglevel'
+// log.setLevel('silent')
 
 test('Compile with simple data', () => {
   expect.assertions(2)
-  return bundle({
+  return bundles.run({
     bundles: [{
       id: 'test1',
       input: ['test/fixtures/simple.md'],
@@ -35,7 +35,7 @@ test('Compile with simple data', () => {
 
 test('Compile with front matter and partials include', () => {
   expect.assertions(2)
-  return bundle({
+  return bundles.run({
     id: 'test3',
     input: ['test/fixtures/complex.md'],
     data: (file) => {
@@ -64,7 +64,7 @@ test('Compile with front matter and partials include', () => {
 
 test('Compile with options.localsName and options._with', () => {
   expect.assertions(2)
-  return bundle({
+  return bundles.run({
     bundles: [{
       id: 'locals',
       input: {

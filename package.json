@@ -39,7 +39,7 @@
     "coveralls": "^3.0.3",
     "jest": "^24.7.1",
     "rimraf": "^2.6.3",
-    "rollup": "^1.11.0",
+    "rollup": "^1.11.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-terser": "^4.0.4",
     "semantic-release": "^15.13.12"

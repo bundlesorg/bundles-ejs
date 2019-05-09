@@ -10,7 +10,7 @@ export default (bundle = {}, bundler = {}) => {
   bundle.changed = bundle.changed.map((file) => {
     bundler.options.filename = file.source.path
     if (bundler.options.context === undefined) bundler.options.context = file.data
-    file.content = ejs.render(file.source.content, file.data, bundler.options)
+    file.content = ejs.render(file.content, file.data, bundler.options)
     return file
   })
 

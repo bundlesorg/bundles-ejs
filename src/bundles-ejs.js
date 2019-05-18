@@ -7,11 +7,10 @@ export default (bundle = {}, bundler = {}) => {
   bundler.options = bundler.options || {}
 
   // Compile each changed file with EJS and update file content.
-  bundle.changed = bundle.changed.map((file) => {
+  bundle.changed.forEach((file) => {
     bundler.options.filename = file.source.path
     if (bundler.options.context === undefined) bundler.options.context = file.data
     file.content = ejs.render(file.content, file.data, bundler.options)
-    return file
   })
 
   // Return bundle.

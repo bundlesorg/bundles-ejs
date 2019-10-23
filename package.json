@@ -1,6 +1,6 @@
 {
   "name": "@bundles/bundles-ejs",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A bundler plugin for Bundles which compiles templates with EJS.",
   "keywords": ["brikcss", "bundles", "bundler", "ejs"],
   "license": "MIT",
@@ -29,23 +29,22 @@
     "watch": "concurrently \"npm run build -- --watch\" \"jest --config .jestrc.js --watchAll\""
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.4.4",
-    "@brikcss/git-hooks": "^2.1.2",
-    "@node-minify/cli": "^4.1.0",
-    "@node-minify/uglify-es": "^4.0.5",
+    "@babel/preset-env": "^7.6.3",
+    "@brikcss/git-hooks": "^3.0.1",
+    "@node-minify/cli": "^4.1.2",
+    "@node-minify/uglify-es": "^4.1.2",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "codacy-coverage": "^3.4.0",
-    "concurrently": "^4.1.0",
-    "coveralls": "^3.0.3",
-    "jest": "^24.7.1",
-    "rimraf": "^2.6.3",
-    "rollup": "^1.11.0",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-terser": "^4.0.4",
-    "semantic-release": "^15.13.12"
+    "concurrently": "^5.0.0",
+    "coveralls": "^3.0.7",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.25.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.1.2"
   },
   "dependencies": {
-    "@bundles/core": "^0.5.6",
-    "ejs": "2.6.1"
+    "@bundles/core": "^0.9.4",
+    "ejs": "2.7.1"
   }
 }
